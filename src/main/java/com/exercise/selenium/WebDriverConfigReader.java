@@ -5,8 +5,8 @@ import static com.exercise.constants.PropertiesInput.EXPLICIT_WAIT_TIME;
 import static com.exercise.constants.PropertiesInput.IMPLICIT_WAIT_TIME;
 import static com.exercise.constants.PropertiesInput.WAIT_SLEEP_TIME;
 
-import org.apache.log4j.Logger;
 import com.exercise.utils.PropertiesManager;
+import org.apache.log4j.Logger;
 
 /**
  * Manages Web Driver configuration.
@@ -29,10 +29,9 @@ public class WebDriverConfigReader {
   }
 
   /**
-   * Constructor of WebDriverConfigReader.
-   * Gets WebDriverConfigReader as Singleton.
+   * Constructor of WebDriverConfigReader. Gets WebDriverConfigReader as Singleton.
    *
-   * @return a instance.
+   * @return WebDriverConfigReader instance.
    */
   public static WebDriverConfigReader getInstance() {
     if (instance == null) {

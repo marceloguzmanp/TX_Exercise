@@ -1,13 +1,12 @@
 package com.exercise.selenium.webdriver;
 
 import com.exercise.constants.Browser;
-import com.exercise.selenium.browser.FireFox;
+import com.exercise.selenium.browser.Chrome;
+import com.exercise.selenium.browser.IDriver;
 import java.util.EnumMap;
 import java.util.Map;
 import java.util.function.Supplier;
 import org.openqa.selenium.WebDriver;
-import com.exercise.selenium.browser.Chrome;
-import com.exercise.selenium.browser.IDriver;
 
 /**
  * Returns the driver instance.
@@ -18,7 +17,6 @@ public class BrowserFactory {
 
   static {
     BROWSERS.put(Browser.CHROME, Chrome::new);
-    BROWSERS.put(Browser.FIREFOX, FireFox::new);
   }
 
   /**
